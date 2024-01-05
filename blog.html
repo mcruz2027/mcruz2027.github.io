@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5b29f51c0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section class="sub-header4">
+		<nav>
+			<a href="index.html"><img src="images/Logo.png" alt="1"></a>
+			<div class="nav-links" id="navLinks"> <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="extra.html">EXTRA-CURRICULARS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div> <i class="fa fa-solid fa-bars" onclick="showMenu()"></i> </nav>
+		<h1>Certificates & Online Programs For 2023</h1> </section>
+	<!-- blog page content -->
+	<section class="blog-content">
+		<div class="row">
+			<div class="blog-left"> <img src="images/16.png" alt="`">
+				<h2>Certificates & Online Programs For 2023</h2>
+				<p>Red Horizon University is leading the way in education in 2023, providing an extensive selection of online programs and certificates to satisfy the evolving requirements of students in a world that is undergoing rapid change. These programs, which have undergone careful design by experts in the field and knowledgeable instructors, support a wide range of academic disciplines. As a result, students have the freedom to develop their expertise and understanding in accordance with their personal passions and professional goals.</p>
+				<br>
+				<p>Certificate programs attest to the university's dedication to imparting specialized, in-depth knowledge in niche disciplines. Red Horizon University offers certificates in domains such as business analytics, digital marketing, and artificial intelligence, all of which are designed to furnish learners with pragmatic abilities and discernment that are immediately relevant in the ever-evolving contemporary labor market. In addition to their academic rigor, these programs integrate practical situations, thereby guaranteeing that graduates are adequately prepared to confront obstacles within their specific sectors.</p>
+				<br>
+				<p>In response to the growing need for adaptable educational alternatives, Red Horizon University has strategically broadened its portfolio of online programs. Students everywhere in the world now have the ability to obtain a superior education by utilizing interactive online platforms and cutting-edge virtual classrooms. The academic rigor of the online programs is equivalent to that of their on-campus counterparts, and they cultivate a global community of learners who transcend geographical boundaries through collaborative projects and meaningful discussions.</p>
+				<br>
+				<p>Red Horizon University's prioritization of online programs and certificates in the current digital era demonstrates the institution's commitment to remaining at the vanguard of educational innovation. Through the adoption of emerging technologies and the adjustment to evolving student needs, the university not only equips individuals to confront contemporary challenges but also ignites their futures by cultivating an enduring enthusiasm for knowledge acquisition and motivating them to achieve excellence in all aspects of their personal and professional pursuits.</p>
+				<br>
+				<div class="comment-box">
+					<h3>Feel free to express yourself!</h3>
+					<form class="comment-form">
+						<input type="text" placeholder="Enter Name">
+						<input type="email" placeholder="Enter Email">
+						<textarea rows="5" placeholder="Your insight"> </textarea>
+						<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+					</form>
+				</div>
+			</div>
+			<div class="blog-right">
+				<h3>Post Categories</h3>
+				<div> <span>Business Analytics</span> <span>2</span> </div>
+				<div> <span>Data Science</span> <span>28</span> </div>
+				<div> <span>Machine Learning</span> <span>15</span> </div>
+				<div> <span>Computer Science</span> <span>34</span> </div>
+				<div> <span>Biology</span> <span>23</span> </div>
+				<div> <span>Journalism</span> <span>22</span> </div>
+				<div> <span>Commerce</span> <span>30</span> </div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Red Horizon University is a brilliant academic institution renowned
+			<br>for its unyielding dedication to nurturing innovation, unparalleled
+			<br>proficiency in education, and the cultivation of tomorrow's prominent individuals.</p>
+		<div class="icons"> <i class="fa fa-brands fa-facebook"></i> <i class="fa fa-brands fa-x-twitter"></i> <i class="fa fa-brands fa-instagram"></i> <i class="fa fa-brands fa-linkedin-in"></i>
+			<p>
+				<br><i class="fa-regular fa-copyright"></i> 1694-2023 Red Horizon University</p>
+		</div>
+	</section>
+	<!-- Javascript for Toggle Menu -->
+	<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=1.0">
+	<title>Audio</title>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5b29f51c0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="music-player">
+			<nav>
+				<a href="poetry.html" class="circle"> <i class="fa-solid fa-angle-left"></i> </a>
+				<a href="https://genius.com/Olivia-rodrigo-drivers-license-lyrics" class="circle"> <i class="fa-solid fa-bars"></i> </a>
+			</nav> <img src="media/u3.png" class="song-img" alt="`">
+			<h1>Driver’s License</h1>
+			<p>by Olivia Rodrigo</p>
+			<audio id="song">
+				<source src="media/Driver_sLicense.mp3" type="audio/mpeg"> </audio>
+			<input type="range" value="0" id="progress">
+			<div class="controls">
+				<div><a href="audio2.html"><i class="fa-solid fa-backward"></i></a></div>
+				<div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+				<div><a href="audio4.html"><i class="fa-solid fa-forward"></i></a></div>
+			</div>
+		</div>
+	</div>
+	<script>
+	let progress = document.getElementById("progress");
+	let song = document.getElementById("song");
+	let ctrlIcon = document.getElementById("ctrlIcon");
+	song.onloadedmetadata = function() {
+		progress.max = song.duration;
+		progress.value = song.currentTime;
+	}
+
+	function playPause() {
+		if(ctrlIcon.classList.contains("fa-pause")) {
+			song.pause();
+			ctrlIcon.classList.remove("fa-pause");
+			ctrlIcon.classList.add("fa-play");
+		} else {
+			song.play();
+			ctrlIcon.classList.add("fa-pause");
+			ctrlIcon.classList.remove("fa-play");
+		}
+	}
+	if(song.play()) {
+		setInterval(() => {
+			progress.value = song.currentTime
+		}, 500);
+	}
+	progress.onchange = function() {
+		song.play();
+		song.currentTime = progress.value;
+		ctrlIcon.classList.add("fa-pause");
+		ctrlIcon.classList.remove("fa-play");
+	}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5b29f51c0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section class="sub-header5">
+		<nav>
+			<a href="index.html"><img src="images/Logo.png" alt="1"></a>
+			<div class="nav-links" id="navLinks"> <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="extra.html">EXTRA-CURRICULARS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div> <i class="fa fa-solid fa-bars" onclick="showMenu()"></i> </nav>
+		<h1>Reach Our Customer Service</h1> </section>
+	<!-- contact us -->
+	<section class="location">
+		<h1>Explore Our Venue</h1>
+		<p>Explore the vibrant academic landscape of Red Horizon University,
+			<br>where a dedication to excellence, state-of-the-art research,
+			<br>and a vibrant community converge to mold the future leaders,
+			<br>and embark on a transformative voyage of knowledge and innovation.</p>
+		<br>
+		<div class="indexx">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3315169.8383422387!2d-119.31309977026937!3d35.76381612642819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8bd0795a08535%3A0x74ced81d2afcb24c!2sRed%20Rock%20Canyon%20National%20Conservation%20Area!5e0!3m2!1sen!2sph!4v1700996444189!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div> <i class="fa fa-solid fa-house"></i>
+					<h5>Red Rock Canyon, USA</h5> </div>
+				<div> <i class="fa fa-solid fa-phone"></i>
+					<h5>+1 702-515-5350 </h5> </div>
+				<div> <i class="fa fa-solid fa-envelope"></i>
+					<h5>rhu.edu@gmail.com</h5> </div>
+			</div>
+			<div class="contact-col">
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Input your name" required>
+					<input type="email" name="email" placeholder="Input email address" required>
+					<input type="text" name="subject" placeholder="Input your subject" required>
+					<textarea rows="8" name="message" placeholder="Message" required></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Red Horizon University is a brilliant academic institution renowned
+			<br>for its unyielding dedication to nurturing innovation, unparalleled
+			<br>proficiency in education, and the cultivation of tomorrow's prominent individuals.</p>
+		<div class="icons"> <i class="fa fa-brands fa-facebook"></i> <i class="fa fa-brands fa-x-twitter"></i> <i class="fa fa-brands fa-instagram"></i> <i class="fa fa-brands fa-linkedin-in"></i>
+			<p>
+				<br><i class="fa-regular fa-copyright"></i> 1694-2023 Red Horizon University</p>
+		</div>
+	</section>
+	<!-- Javascript for Toggle Menu -->
+	<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+	</script>
+</body>
+
+</html>

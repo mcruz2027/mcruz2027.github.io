@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5b29f51c0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section class="sub-header2">
+		<nav>
+			<a href="index.html"><img src="images/Logo.png" alt="1"></a>
+			<div class="nav-links" id="navLinks"> <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="extra.html">EXTRA-CURRICULARS</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div> <i class="fa fa-solid fa-bars" onclick="showMenu()"></i> </nav>
+		<h1>Our Courses</h1> </section>
+	<!-- Course -->
+	<section class="course">
+		<h1>Academic Offerings</h1>
+		<p>At Red Horizon University, we adorn your academic voyage
+			<br> with luxurious strokes of brilliance, presenting a variety
+			<br>of innovative programs that ignite the flames
+			<br>of intellectual passion and gracefully steer you towards
+			<br>a future resplendent with intellect, ingenuity, and triumph.</p>
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>At the esteemed Red Horizon University,
+					<br>the intermediate subjects present an extravagant combination of cutting-edge theories and fully immersive practical
+					<br> applications, enveloping students in a vibrant academic atmosphere where they carefully refine their expertise and gracefully navigate the boundless frontiers of knowledge.</p>
+			</div>
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>At Red Horizon University,
+					<br>our notable degrees are meticulously crafted in the gilded crucible of unparalleled
+					<br>excellence, bestowing upon our esteemed students a vibrant and extravagant
+					<br> education that sets ablaze their intellectual passions and propels them towards a future adorned with triumph and prosperity.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post Graduation</h3>
+				<p>Red Horizon University's post-graduation programs empower students to
+					<br>embark on an exhilarating journey of intellectual exploration. We guide
+					<br>them to push the boundaries of knowledge while infusing the experience with a
+					<br>sense of joy and excitement in the pursuit of discovery.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Call To Action -->
+	<br>
+	<br>
+	<br>
+	<section class="Main">
+		<h1>Two Flagship Courses</h1>
+		<p>Explore in greater detail the two primary courses provided by Red Horizon.</p>
+		<div class="cta1">
+			<h1>
+        Biological Sciences Program </h1> <a href="simulation.html" class="hero-btn">See For A Moment</a> </div>
+		<div class="cta2">
+			<h1>English Language and Literature Program </h1> <a href="poetry.html" class="hero-btn">Make A Short Trip</a> </div>
+	</section>
+	<!-- facilities -->
+	<section class="facilities">
+		<h1>Our Facilities</h1>
+		<p>Delight in the superiority of our facilities, which have been painstakingly crafted to surpass international benchmarks.</p>
+		<div class="row">
+			<div class="facilities-col"> <img src="images/library.png" alt="1">
+				<h3>World Class Library</h3>
+				<p>Explore an infinite reservoir of knowledge and unbounded opportunities at Red Horizon University, where the advanced library serves as a symbol of intellectual inquiry, providing students with unparalleled access to a vast collection of materials and state-of-the-art technologies within an environment that personifies distinction.</p>
+			</div>
+			<div class="facilities-col"> <img src="images/pool.png" alt="1">
+				<h3>Unrivaled Pool Infrastructure</h3>
+				<p>Dive into excellence at Red Horizon University, where the unrivaled pool infrastructure beckons students to experience aquatic training and leisure in a state-of-the-art facility designed for both athleticism and relaxation.</p>
+			</div>
+			<div class="facilities-col"> <img src="images/canteen.png" alt="1">
+				<h3>Exquisite Global Cuisine</h3>
+				<p>At Red Horizon University, savor a culinary experience where delectable and nutrient-rich cuisine becomes an integral part of campus life, fostering not only student well-being but also a vibrant, health-conscious community.</p>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Red Horizon University is a brilliant academic institution renowned
+			<br>for its unyielding dedication to nurturing innovation, unparalleled
+			<br>proficiency in education, and the cultivation of tomorrow's prominent individuals.</p>
+		<div class="icons"> <i class="fa fa-brands fa-facebook"></i> <i class="fa fa-brands fa-x-twitter"></i> <i class="fa fa-brands fa-instagram"></i> <i class="fa fa-brands fa-linkedin-in"></i>
+			<p>
+				<br><i class="fa-regular fa-copyright"></i> 1694-2023 Red Horizon University</p>
+		</div>
+	</section>
+	<!-- Javascript for Toggle Menu -->
+	<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+	</script>
+</body>
+
+</html>
